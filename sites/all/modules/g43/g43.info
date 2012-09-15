@@ -1,0 +1,4 @@
+name = G43
+description = custom module
+package = G43
+core = 7.x

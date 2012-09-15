@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * Implements hook_init().
+ */
+function g43_init() {
+
+}
+
+
+/**
+ * Implements hook_menu().
+ */
+function g43_menu() {
+  $items['home'] = array(
+    'title' => 'home',
+    'page callback' => 'g43_home',
+    'access arguments' => TRUE,
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+
+/**
+ * Function for home page.
+ */
+function g43_home() {
+  return '';
+}
+
+
+/**
+ * Implements hook_node_view().
+ */
+function g43_node_view($node, $view_mode, $langcode) {
+  if ($node->type == 'blog') {
+
+    // Add to head, for Vk like button.
+    $inline_script = '<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?52"></script>
+                      <script type="text/javascript">VK.init({apiId: 3125875, onlyWidgets: true});</script>
+    ';
+
+
+    $element = array(
+      '#type' => 'markup',
+      '#markup' => $inline_script,
+    );
+
+    drupal_add_html_head($element, 'js_for_vk_like');
+  }
+
+}
