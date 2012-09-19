@@ -111,6 +111,18 @@ a:hover {
   padding-right: 250px
 }
 
+.view-slideshow .views-field-title {
+  position: relative;
+  top:120px;
+  left: 20px;
+}
+
+.view-id-slideshow .views-field-body {
+  position: relative;
+  top:120px;
+  left: 20px;
+} 
+
 
 /*.pager a:hover, .pager a:active{
 color: #ffffff;
