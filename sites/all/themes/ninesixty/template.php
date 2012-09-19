@@ -61,6 +61,7 @@ function ninesixty_preprocess_page(&$vars) {
 
   $vars['breadcrumb'] = '';
   if (drupal_is_front_page()) {
+    drupal_add_js(drupal_get_path('theme', 'ninesixty') .'/js/jquery.cycle.all.js', 'file');
     $vars['title'] = '';
   }
 }
