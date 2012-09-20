@@ -115,13 +115,24 @@ a:hover {
   position: relative;
   top:120px;
   left: 20px;
+  border: 1px solid black;
+  padding-bottom: 20px;
+  margin-right: 800px; 
+  text-align: center; 
+  border-radius: 20px;
+  background-color: #E6E6E6;
+  font: 16px Verdana;
 }
 
 .view-id-slideshow .views-field-body {
   position: relative;
-  top:120px;
+  top:100px;
   left: 20px;
-} 
+  text-align: center;
+  margin-right: 800px;
+  border-radius: 20px;
+  
+}
 
 
 /*.pager a:hover, .pager a:active{
