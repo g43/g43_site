@@ -116,7 +116,8 @@ a:hover {
   position: relative;
   top:120px;
   left: 20px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+  outline: inherit;
   padding-bottom: 20px;
   margin-right: 800px; 
   text-align: center; 
@@ -136,6 +137,8 @@ a:hover {
 
 h2 {
   margin-top: 10px;
+  font:bold 30px Tahoma;
+  letter-spacing: 2px;
 }
 
 .view-id-blog .view-content .views-field-field-image {
@@ -146,3 +149,50 @@ h2 {
 .view-blog .view-content .views-field-title {
   margin-bottom: 20px;
 }
+
+#admin-menu-wrapper a {
+  font:10px Verdana;
+}
+
+.pager  a {
+  font: 16px Verdana;
+  border:1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  background-image: url(framework/images/1335.png);
+  color:#E3CBA7;
+}
+
+.pager a:hover {
+  color:#B53E7E;
+}
+
+
+.pager-current {
+  font:bold 16px Verdana;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.item-list .pager .pager-current {
+  background-image: url(framework/images/1335.png);
+  color:white;
+}
+
+.item-list .pager {
+  margin-bottom: 35px;
+  padding-top: 15px;
+  width: 855px;
+}
+
+/*.pager .pager-next {
+  position: relative;
+  top: 15px;
+}
+
+.pager .pager-last {
+  position: relative;
+  top: 15px;
+}
+*/
+
