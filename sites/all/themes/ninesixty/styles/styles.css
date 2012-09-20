@@ -97,8 +97,9 @@ font: 16px Verdana;
 
 a {
   text-decoration:none;
-  font: bold 18px Verdana;
+  font: 26px Tahoma;
   color:#000000;
+  letter-spacing: 2px;
 }
 
 a:hover {
@@ -131,24 +132,17 @@ a:hover {
   text-align: center;
   margin-right: 800px;
   border-radius: 20px;
-  
 }
 
-
-/*.pager a:hover, .pager a:active{
-color: #ffffff;
-background-image: url(../images/pagination_bg.png);
-background-position: top center;
-background-repeat: no-repeat;
-text-decoration: none; 
+h2 {
+  margin-top: 10px;
 }
 
-.pager li.pager-current {
-font-weight: bold;
-padding: 5px 9px;
-background-color: inherit;
-color: #ffffff;
-background-image: url(../images/pagination_bg.png);
-background-position: top center;
-background-repeat: no-repeat;
-} */
+.view-id-blog .view-content .views-field-field-image {
+  float: left;
+  margin-right: 20px;
+}
+
+.view-blog .view-content .views-field-title {
+  margin-bottom: 20px;
+}
