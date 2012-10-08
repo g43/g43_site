@@ -34,17 +34,18 @@
       <?php print $messages; ?>
     </div>
   <?php endif; ?>
-  <?php if ($page['highlighted']): ?>
-    <div id="highlighted" class="clearfix<?php print ns(' grid-14', $page['header'], 7); ?>">
-      <?php print render($page['highlighted']); ?>
-    </div>
-  <?php endif; ?>
 
   <?php if ($page['header']): ?>
     <div id="header-region" class="clearfix<?php print ns(' grid-14', $page['highlighted'], 7); ?>">
       <?php print render($page['header']); ?>
     </div>
   <?php endif; ?>
+    <?php if ($page['highlighted']): ?>
+    <div id="highlighted" class="clearfix<?php print ns(' grid-14', $page['header'], 7); ?>">
+      <?php print render($page['highlighted']); ?>
+    </div>
+  <?php endif; ?>
+
   </div>
 <?php endif; ?>
 

@@ -28,6 +28,7 @@ function g43_menu() {
  * Function for home page.
  */
 function g43_home() {
+  drupal_set_title('Most popular');
   return '';
 }
 

@@ -1,7 +1,10 @@
+// Initial slideshow.
 (function ($) {
-  $('.view-slideshow .view-content').cycle({
+  var $carosel = $('.view-slideshow .view-content').cycle({
     fx:    'scrollRight',
     sync:   0,
-    delay: -6000
+    delay:  0,
+    timeout: 0,
   });
+  $
 })(jQuery);
